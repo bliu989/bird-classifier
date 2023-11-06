@@ -8,7 +8,6 @@ import os
 model = load_model('bird_classifier.h5')
 
 from matplotlib import image
-from matplotlib import pyplot
 # load images as pixel array
 images = []
 

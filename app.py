@@ -33,7 +33,7 @@ with st.sidebar:
     st.write("""This model classifies images of birds into one of 525 species.
                 The dataset used to train the model can be found 
                 [here](https://www.kaggle.com/datasets/gpiosenka/100-bird-species). 
-                The model is a convolutional neural network (CNN) with any 
+                The model is a convolutional neural network (CNN) without any 
                 transfer learning.
                 You can either select one of the bird pictures, which were 
                 not used in training or validating the model, or 

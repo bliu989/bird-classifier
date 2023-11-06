@@ -40,8 +40,8 @@ with st.sidebar:
                 [upload](#upload-picture-to-predict) a bird picture to 
                 get the 5 most likely species for that bird according to the model. 
                 For the best results, use a photo that only contains one bird 
-                that takes up most of the photo. \n \n This model has a 58.77% test 
-                accuracy and a 78.69% top 5 test accuracy.""")
+                that takes up most of the photo. \n \n This model has a 58.58% test 
+                accuracy and a 78.63% top 5 test accuracy.""")
 
 st.header('Select picture to predict')
 

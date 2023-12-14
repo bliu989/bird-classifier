@@ -20,7 +20,7 @@ with open('labels.txt', 'r') as fp:
     labels = fp.read().split('\n')
 
 def top_5_pred(input):
-    preds = model.predict(np.array([input/255]))[0]
+    preds = model.predict(np.array([input]))[0]
     pred_indices = np.argpartition(preds, -5)[-5:]
     pred_species = pred_indices[np.argsort(preds[pred_indices])][::-1]
     pred_text = '\n'.join([f'{preds[i]:.2%} {labels[i]}' for i in pred_species])
@@ -40,8 +40,8 @@ with st.sidebar:
                 [upload](#upload-picture-to-predict) a bird picture to 
                 get the 5 most likely species for that bird according to the model. 
                 For the best results, use a photo that only contains one bird 
-                that takes up most of the photo. \n \n This model has a 58.58% test 
-                accuracy and a 78.63% top 5 test accuracy.""")
+                that takes up most of the photo. \n \n This model has a 89.73% test 
+                accuracy and a 97.45% top 5 test accuracy.""")
 
 st.header('Select picture to predict')
 

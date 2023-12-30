@@ -60,7 +60,6 @@ st.write("""This model classifies images of birds into one of 525 species.
 col1, col2 = st.columns(2)
 
 with col1:
-    # st.image(images, width=150)
     img = image_select(label='Select a bird',
                    images=images,
                    use_container_width=False)
@@ -82,17 +81,3 @@ with col2:
                          'Unable to perform predictions on this image',
                          height=150)
 
-
-
-
-
-# st.divider()
-# st.header('Select picture to predict')
-#
-# img = image_select(label='Select a bird',
-#                    images=images,
-#                    use_container_width=False)
-#
-# st.text_area('Predictions:', top_5_pred(img), height=150)
-
-#top_5_pred(img),
